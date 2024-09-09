@@ -1,0 +1,148 @@
+/* Reset de estilo */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+/* Corpo e tipografia */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Fonte Apple */
+  color: #333; /* Cinza escuro para o texto */
+  background-color: #f2f2f2; /* Fundo cinza claro */
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #fff; /* Branco */
+  padding: 2em;
+  text-align: center; /* Centraliza o texto do header */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: 600; /* Levemente mais negrito */
+  margin-bottom: 0.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #666; /* Cinza claro para o subtítulo */
+  line-height: 1.6; /* Aumenta o espaçamento entre linhas do parágrafo */
+}
+
+/* Busca */
+.busca {
+  display: flex;
+  align-items: center;
+  margin: 2em auto; /* Centraliza horizontalmente */
+  padding: 0.8em 1em;
+  background-color: white;
+  border-radius: 20px; /* Cantos arredondados */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  width: 50%;
+  max-width: 500px;
+}
+
+.busca input[type="text"] {
+  border: none; /* Remove a borda */
+  padding: 0.5em;
+  flex-grow: 1;
+  font-size: 1em;
+  background-color: transparent; /* Fundo transparente */
+}
+
+.busca input[type="text"]::placeholder { /* Estilo do placeholder */
+  color: #aaa; 
+}
+
+.busca button[type="submit"] {
+  background-color: #4CAF50; /* Verde Apple */
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 5px; /* Cantos arredondados */
+  font-weight: 600;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.busca button[type="submit"]:hover {
+  background-color: #45a049; /* Cor mais escura ao passar o mouse */
+}
+
+/* Resultados */
+.resultados {
+  padding: 2em;
+}
+
+/* Cards */
+section div.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+section div.card h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+}
+
+section div.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+section div.card ul li {
+  margin-bottom: 0.5em;
+  color: #555;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #fff;
+  margin-top: 2em;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1); /* Sombra no topo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .busca {
+    width: 90%; /* Aumenta a largura da busca em telas menores */
+    flex-direction: column;
+  }
+
+  .busca input[type="text"] {
+    margin-bottom: 1em;
+  }
+}
+/* Estilo para o botão de pesquisa */
+.busca button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.busca button:hover {
+  background-color: #45a049;
+}
